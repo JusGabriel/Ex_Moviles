@@ -1,0 +1,46 @@
+.login-bg {
+  --background: #bbd7f3;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  --background: #001f3f;
+  padding: 20px;
+  color: white;
+}
+
+ion-card .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+ion-item {
+  --background: transparent;
+}
+
+ion-label {
+  color: #ccc !important;
+}
+
+ion-input {
+  color: rgb(0, 0, 0);
+}
+
+ion-input::part(native) {
+  color: white;
+}
+
+ion-button {
+  margin-top: 10px;
+}

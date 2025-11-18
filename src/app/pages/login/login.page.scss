@@ -1,0 +1,46 @@
+.login-bg {
+  --background: #bbd7f3; // color de fondo de la pantalla
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  --background: #001f3f; // azul marino
+  padding: 20px;
+  color: white;
+}
+
+ion-card .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+ion-item {
+  --background: transparent;
+}
+
+ion-label {
+  color: #ccc !important; // para que se vea sobre azul
+}
+
+ion-input {
+  color: rgb(0, 0, 0); // texto que escribes
+}
+
+ion-input::part(native) {
+  color: white; // asegura que el texto ingresado sea blanco
+}
+
+ion-button {
+  margin-top: 10px;
+}

@@ -1,0 +1,17 @@
+<!-- home-usuario.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home Usuario</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="irInicio()">Inicio</ion-button>
+      <ion-button (click)="irMisPlanes()">Mis Planes</ion-button>
+      <ion-button (click)="irChat()">Chat</ion-button>
+      <ion-button (click)="irPerfil()">Perfil</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Aquí se renderizan las rutas hijas -->
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Onboarding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-bg">
+  <div class="login-container">
+    <ion-card>
+      <ion-card-content>
+        <div class="slide-content">
+          <h2 class="title">{{ slides[currentSlide].title }}</h2>
+          <p class="description">{{ slides[currentSlide].description }}</p>
+        </div>
+
+        <ion-button expand="full" color="dark" (click)="nextSlide()" class="slide-button">
+          {{ currentSlide === slides.length - 1 ? 'Empezar' : 'Siguiente' }}
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

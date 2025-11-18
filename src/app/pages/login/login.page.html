@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title style="color: white;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-bg">
+  <div class="login-container">
+    <ion-card>
+      <ion-card-content>
+        <h2 class="title">Iniciar sesión</h2>
+
+        <!-- Selector de rol -->
+        <ion-segment [(ngModel)]="selectedRole" color="dark">
+          <ion-segment-button value="usuario">
+            Usuario
+          </ion-segment-button>
+          <ion-segment-button value="asesor">
+            Asesor
+          </ion-segment-button>
+        </ion-segment>
+
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-button expand="full" (click)="login()">Iniciar sesión</ion-button>
+        <ion-button expand="full" fill="outline" (click)="explorarComoInvitado()">Explorar como invitado</ion-button>
+        <ion-button expand="full" fill="clear" (click)="irRegistro()">Registrarse</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

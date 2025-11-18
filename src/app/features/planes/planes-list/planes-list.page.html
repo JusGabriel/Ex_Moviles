@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Planes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let plan of planes" (click)="verDetalle(plan.id)">
+      <ion-label>
+        <h2>{{ plan.nombre }}</h2>
+        <p>Precio: ${{ plan.precio }}</p>
+        <p>Segmento: {{ plan.segmento }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <p *ngIf="planes.length === 0">No hay planes disponibles.</p>
+</ion-content>

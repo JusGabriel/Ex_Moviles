@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Detalle del Plan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="plan">
+    <img *ngIf="plan.imagen_url" [src]="plan.imagen_url" alt="{{plan.nombre}}" />
+    <ion-card-header>
+      <ion-card-title>{{ plan.nombre }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Precio:</strong> ${{ plan.precio }}</p>
+      <p><strong>Segmento:</strong> {{ plan.segmento }}</p>
+
+      <!-- 🔹 Botón para contratar -->
+      <ion-button expand="block" color="primary" (click)="contratarPlan()">
+        Contratar Plan
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <p *ngIf="!plan">No se ha seleccionado ningún plan.</p>
+</ion-content>
