@@ -10,6 +10,11 @@ Registro e inicio de sesión con Supabase Auth.
 Manejo seguro del token y persistencia del estado del usuario.
 Metadatos para diferenciar roles como cliente y asesor.
 
+![69c00cff-aea0-4ad6-877f-c8331aca1ff5](https://github.com/user-attachments/assets/465e0af8-04cd-482d-8df6-6b1bd935bd68)
+![3cbe7a2d-4e26-48c4-a77a-d9a65d5602d5](https://github.com/user-attachments/assets/175005a6-c7a6-4d36-bfbc-863b01d2e493)
+![4269f8f9-604b-4039-b89e-1fd04ac61824](https://github.com/user-attachments/assets/a984f8ca-66c3-4bfa-94e2-7244e378aa07)
+
+
 ## 2.2 Gestión de Planes Móviles
 
 * Creación de tabla planes_moviles.
