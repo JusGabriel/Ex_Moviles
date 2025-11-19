@@ -13,71 +13,36 @@ Metadatos para diferenciar roles como cliente y asesor.
 ## 2.2 Gestión de Planes Móviles
 
 * Creación de tabla planes_moviles.
-
 * Consulta desde Ionic mediante Supabase.
-
 * Vista para mostrar los planes y detalle de cada uno.
 
 ## 2.3 Sistema de Contrataciones
 
 Tabla contrataciones con relación a usuarios y planes.
-
-API de creación de contrataciones con validaciones.
-
 RLS configurado para que:
-
-El usuario solo vea sus propias contrataciones.
-
-El asesor pueda ver solo las asignadas.
-
-Pantalla "Mis Contrataciones" que muestra:
-
-Nombre del plan
-
-Estado
-
-Fecha
-
-Enlace directo para abrir un chat por contratación.
+* El usuario solo vea sus propias contrataciones.
+* El asesor pueda ver solo las asignadas.
 
 ## 2.4 Chat en Tiempo Real
 
 Tabla mensajes_chat para registrar mensajes por contratación.
-
 Servicio de chat en Angular:
-
-Envío de mensajes a Supabase.
-
-Suscripción en tiempo real usando postgres_changes.
-
-Historial de mensajes ordenados por fecha.
-
-Pantalla de chat para cliente y asesor.
+* Envío de mensajes a Supabase.
+* Suscripción en tiempo real usando postgres_changes.
+* Historial de mensajes ordenados por fecha.
+* Pantalla de chat para cliente y asesor.
 
 ## 2.5 Asignación de Asesores
 
-Tabla asesores enlazada a planes_moviles.
+* Tabla asesores enlazada a planes_moviles.
+* Configuración SQL para relacionar cada contratación con un asesor.
+* Creación de usuarios asesores en Supabase Auth.
 
-Configuración SQL para relacionar cada contratación con un asesor.
-
-Creación de usuarios asesores en Supabase Auth.
-
-3. Integraciones Técnicas Principales
+# 3. Integraciones Técnicas Principales
 
 Supabase:
 
-Auth (usuarios y roles)
+* Auth (usuarios y roles)
+* PostgreSQL (base de datos)
+* Row Level Security
 
-PostgreSQL (base de datos)
-
-Row Level Security
-
-Realtime (suscripción a mensajes)
-
-Ionic + Angular Standalone Components
-
-Navegación con Router
-
-UI con Ionic Framework
-
-Servicios personalizados
